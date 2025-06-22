@@ -1,0 +1,11 @@
+WE ARE DESIGNING RESTAPI
+RESTAPI - JSON
+
+GET/users-list all users
+GET/users/1-get the user id with 1
+
+POST/users-Create new users
+
+PATCH/users/id-edit the user with id 
+
+D

@@ -1,0 +1,17 @@
+WE ARE DESIGNING RESTAPI
+RESTAPI - JSON
+
+GET/users- HTML document render
+GET/api/users - list all users 
+GET/api/users/1-get the user id with 1
+
+Dynamic Path Parameters 
+GET/api/users/:id
+:id -> Variable
+
+
+POST/api/users-Create new users
+
+PATCH/api/users/id-edit the user with id 
+
+DELETE/api/users/1-delete the user with id 1
