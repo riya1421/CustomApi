@@ -1,0 +1,4 @@
+servicesMapping:
+    s1:
+        - my-keploy-app
+self: s1
