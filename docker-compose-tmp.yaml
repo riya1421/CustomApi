@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+    mysql:
+        image: mysql:5.7
+        container_name: mysql-db
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: keploydb
+        ports:
+            - "3306:3306"
+        networks:
+            - keploy-net
+    app:
+        build: .
+        container_name: my-keploy-app
+        depends_on:
+            - mysql
+        environment:
+            DB_HOST: mysql-db
+            DB_USER: root
+            DB_PASSWORD: root
+            DB_NAME: keploydb
+        ports:
+            - "8000:8000"
+        networks:
+            - keploy-net
+networks:
+    keploy-net:
+        driver: bridge
+        external: true
