@@ -1,0 +1,7 @@
+name: assignment2
+contract:
+  services:
+    - s1
+  mappings:
+    servicesMapping:
+      s1: http://localhost:8000
